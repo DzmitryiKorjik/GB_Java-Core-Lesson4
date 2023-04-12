@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        PhoneBook phoneBook = new PhoneBook();
+        
+        // Добавляем записи в телефонную книгу
+        phoneBook.add("Иванов", "+7 (123) 456-78-90");
+        phoneBook.add("Петров", "+7 (987) 654-32-10");
+        phoneBook.add("Сидоров", "+7 (111) 222-33-44");
+        phoneBook.add("Иванов", "+7 (999) 888-77-66");
+        phoneBook.add("Петров", "+7 (555) 444-33-22");
+        
+        // Ищем телефонные номера по фамилии
+        System.out.println("Телефонные номера Иванова: " + phoneBook.get("Иванов"));
+        System.out.println("Телефонные номера Петрова: " + phoneBook.get("Петров"));
+        System.out.println("Телефонные номера Сидорова: " + phoneBook.get("Сидоров"));
+        System.out.println("Телефонные номера Николаева: " + phoneBook.get("Николаев"));
+    }
+}
